@@ -1,0 +1,61 @@
+@import '../abstract/variaveis';
+
+
+.days-containers{
+    display: flex;
+    padding: 16px 9px;
+    
+
+    h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;
+        box-shadow: 0px 4px 24px rgba(168, 168, 168, 0.25);
+        border-radius: 10px;
+        font-size: 17px;
+        height: 75px;
+        width: 85px;
+        margin-right: 16px;
+
+    }
+
+    .days-button{
+        height: 33px;
+        margin-right: 24px;
+        font-weight: 700;
+        color: #ffffff;
+        box-shadow: 0px 4px 24px rgba(168, 168, 168, 0.25);
+        border-radius: 9px 9px 0px 0px;
+        width: 12%;
+        white-space: nowrap;
+        border: none;
+
+        
+    }
+
+    .color-seg{
+        background-color: #FFA246;
+    }
+
+    .color-ter{
+        background-color: #35E185 ;
+    }
+    .color-qua{
+        background-color: #6688FF ;
+    }
+    .color-qui{
+        background-color: #B366FF;
+    }
+    .color-sex{
+        background-color: #66D1FF;
+    }
+    .color-sab{
+        background-color: #FF66D4;
+
+    }
+    .color-dom{
+        background-color: #FF6666;
+
+    }
+}

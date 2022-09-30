@@ -1,0 +1,144 @@
+body {
+  font-family: "Nunito", sans-serif;
+  background-image: url(../imgs/bola-LogoCompasso\ 1.svg), linear-gradient(#E5E5E5 20%, #ffffff 50%);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-attachment: fixed;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  height: 130px;
+  border-radius: 35px;
+  background-color: #ffffff;
+}
+.header-container .header-name {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-start;
+  line-height: 20px;
+  text-align: left;
+  padding: 10.5px 0px 10.5px 17px;
+  background-color: #6688FF;
+  border-radius: 0px 15px 15px 0px;
+  width: 45vw;
+}
+.header-container .header-name h1 {
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 1.375rem;
+}
+.header-container .header-name p {
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 0.875rem;
+}
+.header-container .header-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+}
+.header-container .header-time-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  height: 100%;
+  width: 20%;
+  padding-right: 28px;
+}
+.header-container .header-time-container .header-time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.header-container .header-time-container .header-time .clock {
+  display: flex;
+}
+.header-container .header-time-container .header-time .clock h1 {
+  font-size: 40px;
+}
+.header-container .header-time-container .header-time .clock p {
+  font-size: 40px;
+}
+.header-container .header-time-container .header-time #day {
+  font-size: 20px;
+}
+
+.create-todo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.create-todo::-webkit-scrollbar {
+  width: 10px;
+  background-color: red;
+  overflow: scroll;
+}
+.create-todo input {
+  text-indent: 30%;
+}
+.create-todo .border-color {
+  border-color: #2CBE82;
+  width: 110%;
+  border-radius: 10px;
+  outline: none;
+}
+.create-todo .border-color:focus {
+  box-shadow: none;
+  outline: none;
+  border: 3px solid #6688FF;
+}
+
+.days-containers {
+  display: flex;
+  padding: 16px 9px;
+}
+.days-containers h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 24px rgba(168, 168, 168, 0.25);
+  border-radius: 10px;
+  font-size: 17px;
+  height: 75px;
+  width: 85px;
+  margin-right: 16px;
+}
+.days-containers .days-button {
+  height: 33px;
+  margin-right: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  box-shadow: 0px 4px 24px rgba(168, 168, 168, 0.25);
+  border-radius: 9px 9px 0px 0px;
+  width: 12%;
+  white-space: nowrap;
+  border: none;
+}
+.days-containers .color-seg {
+  background-color: #FFA246;
+}
+.days-containers .color-ter {
+  background-color: #35E185;
+}
+.days-containers .color-qua {
+  background-color: #6688FF;
+}
+.days-containers .color-qui {
+  background-color: #B366FF;
+}
+.days-containers .color-sex {
+  background-color: #66D1FF;
+}
+.days-containers .color-sab {
+  background-color: #FF66D4;
+}
+.days-containers .color-dom {
+  background-color: #FF6666;
+}/*# sourceMappingURL=style.css.map */

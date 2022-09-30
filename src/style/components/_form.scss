@@ -1,0 +1,40 @@
+@import '../abstract/variaveis';
+
+.create-todo{
+    display: flex;
+    justify-content: space-evenly;
+
+    align-items: flex-start;
+
+    &::-webkit-scrollbar{
+        width: 10px;
+        background-color: red;
+        overflow: scroll;
+
+    }
+    
+
+    input{
+        text-indent: 30%;
+
+    }
+
+    .border-color{
+        border-color: #2CBE82;
+        width: 110%;
+        border-radius: 10px;
+        outline: none;
+        &:focus{
+            box-shadow: none;
+            outline: none;
+            border: 3px solid #6688FF;
+
+        }
+
+        
+    }
+   
+
+}
+
+//d-flex justify-content-around align-items-start
