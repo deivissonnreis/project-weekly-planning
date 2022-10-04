@@ -20,8 +20,8 @@
                     <p>Utilize o formulário para adicionar novas tarefas:</p>
                 </div>
                 <div class="header-buttons">
-                    <button type="button" id="buttonAdd" class="btn btn-success mr-5">Salvar localStorage</button>
-                    <button type="button" id="buttonGet" class="btn btn-danger">Excluir localStorage</button>
+                    <button type="button" id="buttonSaveLocal" class="btn btn-success mr-5">Salvar localStorage</button>
+                    <button type="button" id="buttonDeleteLocal" class="btn btn-danger">Excluir localStorage</button>
                 </div>
                 <div class="header-time-container">
                     <div class="header-time">
@@ -41,22 +41,22 @@
                 <article >
                     <form class="create-todo pt-5 pb-1">
                         <div class="form-group col-sm-3">
-                          <input type="email" class="form-control border-color" id="Activity" placeholder="Atividade">
+                          <input type="text" class="form-control border-color" id="activityArea" placeholder="Atividade">
                         </div>
                         <div class="form-group col-sm-2">
                           <select class="form-control border-color" id="select-day">
-                            <option>Segunda-feira</option>
-                            <option>Terça-feira</option>
-                            <option>Quarta-feira</option>
-                            <option>Quinta-Feira</option>
-                            <option>Sexta-feira</option>
-                            <option>Sábado</option>
-                            <option>Domingo</option>
+                            <option value="idSeg">Segunda-feira</option>
+                            <option value="idTer">Terça-feira</option>
+                            <option value="idQua">Quarta-feira</option>
+                            <option value="idQui">Quinta-Feira</option>
+                            <option value="idSex">Sexta-feira</option>
+                            <option value="idSab">Sábado</option>
+                            <option value="idDom">Domingo</option>
                           </select>
                         </div>
 
                         <div class="form-group col-sm-1">
-                            <select class="form-control  border-color" id="select-time">
+                            <select id="time-activity" class="form-control  border-color" id="select-time">
                             <option>00:00</option>
                             <option>01:00</option>
                             <option>02:00</option>
@@ -67,11 +67,14 @@
                             <option>07:00</option>
                             <option>08:00</option>
                             <option>09:00</option>
+                            <option>10:00</option>
+                            <option>11:00</option>
+                            <option>12:00</option>
                           </select>
                         </div>
                         
-                        <button type="button" id="buttonAdd" class="btn btn-success mr-5 d-flex align-items-start justify-content-center buttonAct"><p class="mr-2 align-self-start justify-content-start">+ </p> Adicionar Atividade</button>
-                        <button type="button" id="buttonGet" class="btn btn-danger mr-5 d-flex align-items-start justify-content-start buttonAct">- Excluir todos</button>
+                        <button type="button" id="buttonAddTask" class="btn btn-success mr-5 d-flex align-items-start justify-content-center buttonAct"><p class="mr-2 align-self-start justify-content-start">+ </p> Adicionar Atividade</button>
+                        <button type="button" id="buttonDeleteAll" class="btn btn-danger mr-5 d-flex align-items-start justify-content-start buttonAct">- Excluir todos</button>
                     </form>
                 </article>
             </section>
@@ -79,24 +82,37 @@
             <section id="todo-list">
                 <article class="days-containers">
                     <h1>Horário</h1>
-                    <button class="days-button color-seg">Segunda-feira</button>
-                    <button class="days-button color-ter">terça-feira</button>
-                    <button class="days-button color-qua">Quarta-feira</button>
-                    <button class="days-button color-qui">Quinta-feira</button>
-                    <button class="days-button color-sex">Sexta-feira</button>
-                    <button class="days-button color-sab">Sábado</button>
-                    <button class="days-button color-dom">Domingo</button>
+                    <button id="button-seg" class="days-button color-seg">Segunda-feira</button>
+                    <button id="button-ter" class="days-button color-ter">Terça-feira</button>
+                    <button id="button-qua" class="days-button color-qua">Quarta-feira</button>
+                    <button id="button-qui" class="days-button color-qui">Quinta-feira</button>
+                    <button id="button-sex" class="days-button color-sex">Sexta-feira</button>
+                    <button id="button-sab" class="days-button color-sab">Sábado</button>
+                    <button id="button-dom"class="days-button color-dom">Domingo</button>
                 </article>
-                <article class="list-activity">
-                    <ul>
-                        <li></li>
+                <article >
+                    <ul id="list-activity">
+                        <!-- <li class="task-container">
+                            <h1 class="act-time">00:00</h1>
+                            <div id="task">
+                                <span id="taskcolor">Tarefa 1</span>
+                                <button class="button-erase">Apagar</button>
+                            </div>
+                        </li> 
+                        <li class="task-container">
+                            <h1 class="act-time">00:00</h1>
+                            <div id="task">
+                                <span id="taskcolor">Tarefa 1</span>
+                                <button class="button-erase">Apagar</button>
+                            </div>
+                        </li>  -->
                     </ul>
                 </article>
             </section>
         </main>
-        
-        <script src="scripts/script.js"></script>
+        <!-- <script src="scripts/script.js"></script> -->
         <script src="scripts/real_time_clock.js"></script>
+        <script src="scripts/tasks.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 

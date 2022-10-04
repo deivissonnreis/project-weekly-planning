@@ -3,8 +3,9 @@
 
 .days-containers{
     display: flex;
-    padding: 16px 9px;
-    
+    padding: 9px 16px;
+
+   
 
     h1{
         display: flex;
@@ -30,32 +31,88 @@
         width: 12%;
         white-space: nowrap;
         border: none;
-
         
     }
 
     .color-seg{
         background-color: #FFA246;
+        transition: all .3s;
+
+        &:focus{
+            height: 38px;
+            width: 13%;
+            transition: all .3s;
+
+        }
     }
 
     .color-ter{
         background-color: #35E185 ;
+        transition: all .3s;
+
+        &:focus{
+            height: 38px;
+            width: 13%;
+            transition: all .3s;
+
+        }
     }
     .color-qua{
         background-color: #6688FF ;
+        transition: all .3s;
+
+        &:focus{
+            height: 38px;
+            width: 13%;
+            transition: all .3s;
+
+        }
     }
     .color-qui{
         background-color: #B366FF;
+        transition: all .3s;
+
+        &:focus{
+            height: 38px;
+            width: 13%;
+            transition: all .3s;
+
+        }
     }
     .color-sex{
         background-color: #66D1FF;
+        transition: all .3s;
+
+        &:focus{
+            height: 38px;
+            width: 13%;
+            transition: all .3s;
+
+        }
     }
     .color-sab{
         background-color: #FF66D4;
+        transition: all .3s;
+
+        &:focus{
+            height: 38px;
+            width: 13%;
+            transition: all .3s;
+
+        }
 
     }
     .color-dom{
         background-color: #FF6666;
+        transition: all .3s;
+
+        &:focus{
+            height: 38px;
+            width: 13%;
+            transition: all .3s;
+
+        }
 
     }
+
 }

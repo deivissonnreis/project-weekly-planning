@@ -12,6 +12,7 @@ body {
   height: 130px;
   border-radius: 35px;
   background-color: #ffffff;
+  box-shadow: 0px 4px 24px rgba(168, 168, 168, 0.25);
 }
 .header-container .header-name {
   display: flex;
@@ -96,7 +97,7 @@ body {
 
 .days-containers {
   display: flex;
-  padding: 16px 9px;
+  padding: 9px 16px;
 }
 .days-containers h1 {
   display: flex;
@@ -123,22 +124,130 @@ body {
 }
 .days-containers .color-seg {
   background-color: #FFA246;
+  transition: all 0.3s;
+}
+.days-containers .color-seg:focus {
+  height: 38px;
+  width: 13%;
+  transition: all 0.3s;
 }
 .days-containers .color-ter {
   background-color: #35E185;
+  transition: all 0.3s;
+}
+.days-containers .color-ter:focus {
+  height: 38px;
+  width: 13%;
+  transition: all 0.3s;
 }
 .days-containers .color-qua {
   background-color: #6688FF;
+  transition: all 0.3s;
+}
+.days-containers .color-qua:focus {
+  height: 38px;
+  width: 13%;
+  transition: all 0.3s;
 }
 .days-containers .color-qui {
   background-color: #B366FF;
+  transition: all 0.3s;
+}
+.days-containers .color-qui:focus {
+  height: 38px;
+  width: 13%;
+  transition: all 0.3s;
 }
 .days-containers .color-sex {
   background-color: #66D1FF;
+  transition: all 0.3s;
+}
+.days-containers .color-sex:focus {
+  height: 38px;
+  width: 13%;
+  transition: all 0.3s;
 }
 .days-containers .color-sab {
   background-color: #FF66D4;
+  transition: all 0.3s;
+}
+.days-containers .color-sab:focus {
+  height: 38px;
+  width: 13%;
+  transition: all 0.3s;
 }
 .days-containers .color-dom {
   background-color: #FF6666;
+  transition: all 0.3s;
+}
+.days-containers .color-dom:focus {
+  height: 38px;
+  width: 13%;
+  transition: all 0.3s;
+}
+
+#list-activity {
+  padding: 9px 16px;
+}
+#list-activity .task-container {
+  display: flex;
+  margin-bottom: 9px;
+}
+#list-activity .hide {
+  display: none;
+}
+#list-activity .act-time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--backTask);
+  box-shadow: 0px 4px 24px rgba(168, 168, 168, 0.25);
+  border-radius: 10px;
+  border-color: #ffffff;
+  font-size: 17px;
+  height: 75px;
+  width: 85px;
+  margin-right: 16px;
+}
+#list-activity #task {
+  background: linear-gradient(112.83deg, rgba(255, 255, 255, 0.3444) 0%, rgba(255, 255, 255, 0.336) 110.84%);
+  box-shadow: 0px 4px 24px rgba(168, 168, 168, 0.25);
+  border-radius: 15px;
+  width: 33vw;
+  height: 75px;
+  margin-right: 24px;
+  border-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+#list-activity #task #taskcolor {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  padding: 12px 30px;
+  position: relative;
+  font-size: 20px;
+  line-height: 20px;
+}
+#list-activity #task #taskcolor::before {
+  content: "";
+  top: 0;
+  left: 0;
+  background-color: var(--backTask, red);
+  position: absolute;
+  height: 100%;
+  width: 15px;
+  border-radius: 15px 0px 0px 15px;
+  margin-left: 2px;
+}
+#list-activity #task .button-erase {
+  background-color: #98031E;
+  border: none;
+  border-radius: 4px;
+  padding: 4px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  transition: all 5s;
 }/*# sourceMappingURL=style.css.map */
