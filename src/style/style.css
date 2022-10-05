@@ -80,6 +80,18 @@ body {
   background-color: red;
   overflow: scroll;
 }
+.create-todo .buttonDropdown {
+  display: block;
+  position: relative;
+  right: 15px;
+}
+.create-todo .time-sel {
+  display: flex;
+  border-color: red;
+}
+.create-todo .time-color-sel {
+  border-color: red;
+}
 .create-todo input {
   text-indent: 30%;
 }
@@ -192,6 +204,10 @@ body {
 #list-activity .task-container {
   display: flex;
   margin-bottom: 9px;
+  width: 33vw;
+}
+#list-activity .task-container-conflict {
+  display: flex;
 }
 #list-activity .hide {
   display: none;

@@ -6,8 +6,13 @@
     .task-container{
         display: flex;
         margin-bottom: 9px;
+        // border: 2px solid red;
+        width: 33vw;
+    }
+    
+    .task-container-conflict{
+        display: flex;
 
-        
     }
 
     .hide{
